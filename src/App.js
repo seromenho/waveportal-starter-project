@@ -196,6 +196,7 @@ const App = () => {
           </>
         )}
 
+        <div>{"👋".repeat(totalWaves)}</div>
         {allWaves.map((wave, index) => {
           return (
             <div
@@ -206,7 +207,6 @@ const App = () => {
                 padding: "8px",
               }}
             >
-              <div>{"👋".repeat(totalWaves)}</div>
               <div>Address: {wave.address}</div>
               <div>Time: {wave.timestamp.toString()}</div>
               <div>Message: {wave.message}</div>
